@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ING Mortgage – Life Protection</title>
+
+  <!-- If you obtain ING’s official webfont, include it here.
+       Fallback to Inter/System UI for now. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brandline">
+      <h1 class="headline">
+        <span class="ing-head">ING Mortgage</span>
+        <span class="mid-dot">·</span>
+        <span class="subhead">Life Protection powered by</span>
+        <span class="zurich-badge">
+          <img src="assets/zurich-logo.svg" alt="Zurich" onerror="this.classList.add('logo-fallback')" />
+        </span>
+      </h1>
+    </div>
+    <div class="lang">
+      <label for="langSelect" class="sr-only">Language</label>
+      <select id="langSelect">
+        <option value="en">English</option>
+        <option value="de">Deutsch</option>
+      </select>
+    </div>
+  </header>
+
+  <main id="app" class="container">
+    <div class="progress"><div id="progressBar" class="progress__bar"></div></div>
+    <div id="view"></div>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <button id="prevBtn" class="btn btn-secondary"></button>
+      <button id="nextBtn" class="btn btn-primary"></button>
+    </div>
+    <div class="footer__aux">
+      <button id="saveBtn" class="btn btn-light"></button>
+      <button id="loadBtn" class="btn btn-light"></button>
+      <button id="downloadBtn" class="btn btn-light"></button>
+      <button id="resetBtn" class="btn btn-danger"></button>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
