@@ -114,7 +114,7 @@ function computeBMI(){
 function uwOutcome(){
   const bmi = computeBMI();
   let outcome = "Immediate Approval";
-  if(bmi !== null && bmi < 35) outcome = "Refer to Underwriter";
+  if(bmi !== null && bmi > 35) outcome = "Refer to Underwriter";
   return { bmi, outcome };
 }
 
