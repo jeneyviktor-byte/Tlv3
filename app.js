@@ -1,7 +1,7 @@
 /* ING Mortgage – Life Protection (EN/DE)
    - Headline & style aligned to ING
    - New/renamed questions + defaults
-   - BMI (gender-agnostic) + rule: BMI < 35 ⇒ "Refer to Underwriter"
+   - BMI (gender-agnostic) + rule: BMI > 35 ⇒ "Refer to Underwriter"
 */
 const $ = (sel, ctx=document) => ctx.querySelector(sel);
 const view = $("#view");
